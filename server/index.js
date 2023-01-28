@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 require("dotenv").config({ path: "./config/.env" });
 const cors = require("cors");
 
-const messageRouter = require("./Routes/messageRoute");
+const messageRouter = require("./routes/messageRoute");
 
 app.use(cors());
 app.use(bodyParser.json());
