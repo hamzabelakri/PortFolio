@@ -60,13 +60,13 @@ function Project() {
       </div>
       <br />
       <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center justify-center relative">
-        <div className="lg:w-2/3 w-full">
+        <div className="lg:w-3/3 w-full">
           <Swiper
             slidesPerview={1.2}
             spaceBetween={20}
             breakpoints={{
               768: {
-                slidesPerView: 2,
+                slidesPerView: 3,
               },
             }}
             loop={true}

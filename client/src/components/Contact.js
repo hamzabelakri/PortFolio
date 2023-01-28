@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import axios from "axios";
+import {toast, Toaster } from "react-hot-toast";
 
 function Contact() {
   const contact_info = [
@@ -14,13 +16,23 @@ function Contact() {
   const handleChange = (event) => {
     setMessage({ ...message, [event.target.name]: event.target.value });
   };
-  const onClick = (event) => {
+  const onClick = async (event) => {
     setMessage({ name: "", email: "", message: "" });
     event.preventDefault();
-    alert("message sent");
+ 
+    try {
+      const response = await axios.post(
+        "http://localhost:4040/message",
+        message
+      );
+      toast.success(response.data.msg);
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <section id="contact" className="py-10 px-3 text-white">
+        <Toaster position="top-center" reverseOrder={false} />
       <div className="text-center mt-8">
         <h3 className="text-4xl font-semibold">
           Contact <span className="text-cyan-600">Me</span>
