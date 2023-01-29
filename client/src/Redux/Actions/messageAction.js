@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 
 export const sendMessage = (contact) => async (dispatch) => {
     try {
-      const response = await axios.post("https://portfolio-.up.railway.app/message", contact);
+      const response = await axios.post("https://portfolio-uxpz.onrender.com/message", contact);
   
       dispatch({ type: Post_Message, payload: response.data });
   
