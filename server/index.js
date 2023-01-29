@@ -10,7 +10,12 @@ const cors = require("cors");
 
 app.use(cors());
 app.options("*", cors());
-app.use(bodyParser.json());
+app.use(function (req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', '*');
+  res.setHeader('Access-Control-Allow-Headers', '*');
+  next();
+});
 
 app.use("/message", messageRouter);
 
