@@ -22,11 +22,13 @@ function Contact() {
  
     try {
       const response = await axios.post(
-        "http://localhost:4040/message",
+        "portfolio-.up.railway.app",
         message
       );
       toast.success(response.data.msg);
+      console.log(response);
     } catch (error) {
+      toast.error(error)
       console.log(error);
     }
   };
