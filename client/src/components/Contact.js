@@ -28,7 +28,7 @@ function Contact() {
       toast.success(response.data.msg);
       console.log(response);
     } catch (error) {
-      toast.error(error)
+    
       console.log(error);
     }
   };
