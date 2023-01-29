@@ -12,18 +12,18 @@ function Contact() {
     },
   ];
 
-  const [message, setMessage] = useState({ name: "", email: "", message: "" });
+  const [contact, setContact] = useState({ name: "", email: "", message: "" });
   const handleChange = (event) => {
-    setMessage({ ...message, [event.target.name]: event.target.value });
+    setContact({ ...contact, [event.target.name]: event.target.value });
   };
   const onClick = async (event) => {
-    setMessage({ name: "", email: "", message: "" });
+    setContact({ name: "", email: "", message: "" });
     event.preventDefault();
  
     try {
       const response = await axios.post(
         "https://portfolio-.up.railway.app/message",
-        message
+        contact
       );
       toast.success(response.data.msg);
       console.log(response);
@@ -49,7 +49,7 @@ function Contact() {
             <input
               type="text"
               placeholder="Your Name"
-              value={message.name}
+              value={contact.name}
               required
               name="name"
               onChange={handleChange}
@@ -57,7 +57,7 @@ function Contact() {
             <input
               type="Email"
               placeholder="Your Email Address"
-              value={message.email}
+              value={contact.email}
               required
               name="email"
               onChange={handleChange}
@@ -65,7 +65,7 @@ function Contact() {
             <textarea
               placeholder="Your Message"
               name="message"
-              value={message.message}
+              value={contact.message}
               required
               rows={5}
               onChange={handleChange}
