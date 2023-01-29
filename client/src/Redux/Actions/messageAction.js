@@ -12,7 +12,6 @@ export const sendMessage = (contact) => async (dispatch) => {
       console.log(response.data);
       toast.success(response.data.msg);
     } catch (error) {
-      console.log(error.response);
-      toast.error(error.response.data.error);
+      console.log(error);
     }
   };

@@ -1,4 +1,4 @@
-import { Post_Message } from "../Types";
+import { Post_Message} from "../Types";
 
 const initState = { messages: [], message: {} };
 const messageReducer = (state = initState, action) => {
