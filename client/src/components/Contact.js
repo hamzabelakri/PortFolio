@@ -22,7 +22,7 @@ function Contact() {
  
     try {
       const response = await axios.post(
-        "https://portfolio-uxpz.onrender.com",
+        "https://portfolio-.up.railway.app/message",
         message
       );
       toast.success(response.data.msg);
