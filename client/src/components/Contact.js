@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
 import {toast, Toaster } from "react-hot-toast";
+import { useDispatch } from "react-redux";
+import { sendMessage } from "../Redux/Actions/messageAction";
+
 
 function Contact() {
   const contact_info = [
@@ -11,27 +14,19 @@ function Contact() {
       text: "Mourouj III",
     },
   ];
+  const dispatch = useDispatch();
 
   const [contact, setContact] = useState({ name: "", email: "", message: "" });
   const handleChange = (event) => {
     setContact({ ...contact, [event.target.name]: event.target.value });
   };
-  const onClick = async (event) => {
-    setContact({ name: "", email: "", message: "" });
-    event.preventDefault();
- 
-    try {
-      const response = await axios.post(
-        "https://portfolio-.up.railway.app/message",
-        contact
-      );
-      toast.success(response.data.msg);
-      console.log(response);
-    } catch (error) {
-    
-      console.log(error);
-    }
-  };
+  const onClick =  (event) => {
+   
+      dispatch(sendMessage(contact));
+      setContact({ name: "", email: "", message: "" });
+      event.preventDefault();
+    };
+
   return (
     <section id="contact" className="py-10 px-3 text-white">
         <Toaster position="top-center" reverseOrder={false} />
