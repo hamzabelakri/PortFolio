@@ -1,57 +1,156 @@
 import React from "react";
+import { Icon } from "@iconify/react";
 
 function Skills() {
-  const skills = [
+  const tools = [
     {
-      logo: "logo-html5",
+      logo: "bi:github",
+      level: "Beginner",
+      count: 20,
+    },
+
+    {
+      logo: "fa-brands:docker",
+      level: "Beginner",
+      count: 20,
+    },
+  ];
+
+  const front = [
+    {
+      logo: "ion:logo-html5",
       level: "Intermediate",
       count: 40,
     },
     {
-      logo: "logo-css3",
+      logo: "ion:logo-css3",
       level: "Intermediate",
       count: 40,
     },
     {
-      logo: "logo-nodejs",
+      logo: "ion:logo-react",
       level: "Intermediate",
       count: 40,
     },
     {
-      logo: "logo-react",
+      logo: "tabler:brand-redux",
       level: "Intermediate",
       count: 40,
     },
     {
-      logo: "logo-github",
+      logo: "simple-icons:preact",
+      level: "Intermediate",
+      count: 40,
+    },
+    {
+      logo: "mdi:tailwind",
+      level: "Intermediate",
+      count: 40,
+    },
+  ];
+
+  const back = [
+    {
+      logo: "ion:logo-nodejs",
+      level: "Intermediate",
+      count: 40,
+    },
+    {
+      logo: "simple-icons:express",
+      level: "Intermediate",
+      count: 40,
+    },
+    {
+      logo: "bxl:mongodb",
+      level: "Intermediate",
+      count: 40,
+    },
+    {
+      logo: "simple-icons:nestjs",
+      level: "Intermediate",
+      count: 40,
+    },
+    {
+      logo: "simple-icons:rabbitmq",
       level: "Beginner",
       count: 20,
     },
   ];
   return (
     <section id="skills" className="py-10 bg-gray-800 relative mt-3">
-      <div className="mt-8 text-gray-100 text-center">
+      <div className="mt-5 text-gray-100 text-center">
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Skills</span>
         </h3>
-        <p className="text-gray-400 mt-3 text-lg">My knowledge</p>
-        <div className="flex items-center justify-center mt-12 gap-10 flex-wrap">
-          {skills?.map((skill, i) => (
+
+        {/* Tools */}
+
+        <p className="text-gray-400 mt-7 text-2xl">Tools</p>
+        <div className="flex items-center justify-center mt-7 gap-10 flex-wrap">
+          {tools?.map((tools, i) => (
             <div
               key={i}
-              className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl"
+              className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-6 rounded-xl"
             >
               <div
                 style={{
-                  background: `conic-gradient(rgb(8,145,170) ${skill.count}%,#ddd ${skill.count}%)`,
+                  background: `conic-gradient(rgb(8,145,170) ${tools.count}%,#ddd ${tools.count}%)`,
                 }}
                 className="w-32 h-32 flex items-center justify-center rounded-full"
               >
                 <div className="text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-cyan-600">
-                  <ion-icon name={skill.logo}></ion-icon>
+                  <Icon icon={tools.logo} />
                 </div>
               </div>
-              <p className="text-xl mt-3">{skill.level}</p>
+              <p className="text-xl mt-3">{tools.level}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Frond-End */}
+
+        <p className="text-gray-400 mt-7 text-2xl">Front-End</p>
+        <div className="flex items-center justify-center mt-7 gap-10 flex-wrap">
+          {front?.map((front, i) => (
+            <div
+              key={i}
+              className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-6 rounded-xl"
+            >
+              <div
+                style={{
+                  background: `conic-gradient(rgb(8,145,170) ${front.count}%,#ddd ${front.count}%)`,
+                }}
+                className="w-32 h-32 flex items-center justify-center rounded-full"
+              >
+                <div className="text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-cyan-600">
+                  <Icon icon={front.logo} />
+                </div>
+              </div>
+              <p className="text-xl mt-3">{front.level}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Back-End */}
+
+        <p className="text-gray-400 mt-7 text-2xl">Back-End</p>
+        <div className="flex items-center justify-center mt-7 gap-10 flex-wrap">
+          {back?.map((back, i) => (
+            <div
+              key={i}
+              className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-6 rounded-xl"
+            >
+              <div
+                style={{
+                  background: `conic-gradient(rgb(8,145,170) ${back.count}%,#ddd ${back.count}%)`,
+                }}
+                className="w-32 h-32 flex items-center justify-center rounded-full"
+              >
+                <div className="text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-cyan-600">
+                  <Icon icon={back.logo} />
+                </div>
+              </div>
+              <p className="text-xl mt-3">{back.level}</p>
             </div>
           ))}
         </div>

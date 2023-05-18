@@ -6,7 +6,7 @@ function About() {
   const info = [
     { text: "Years experience", count: "0" },
     { text: "Completed Projects", count: "06" },
-    { text: "Companies Work", count: "0" },
+    { text: "Companies Work", count: "1" },
   ];
   return (
     <section id="about" className="-mt-8 sm:mt-0 text-white">
