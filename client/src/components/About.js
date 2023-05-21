@@ -4,7 +4,7 @@ import resume from "../assets/resume.pdf";
 
 function About() {
   const info = [
-    { text: "Years experience", count: "0" },
+    { text: "Months experience", count: "4" },
     { text: "Completed Projects", count: "06" },
     { text: "Companies Work", count: "1" },
   ];
@@ -18,17 +18,27 @@ function About() {
         <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
           <div className="p-2 md:mx-10">
             <div className="text-gray-300 my-3">
-              <p className="font-sans text-lg font-normal text-justify leading-relaxed w-11/14">
-                I've decided to change careers and pursue a more promising and
+              <p className="font-sans text-lg font-normal text-justify leading-loose w-11/14">
+                . I've decided to change careers and pursue a more promising and
                 reliable field, as I am trying to be a FullStack JS developer.
                 <br />
-                Aside from finishing my training at GoMyCode Bootcamp, I've been
-                studying on my own for months and learning new things every day.
+                . Aside from finishing my training at GoMyCode Bootcamp, I've
+                been studying on my own for months and learning new things every
+                day.
                 <br />
-                I'm completely smitten, and I'd like to learn more and dive
-                deeper into this area.
+                . During my internship at IoWaves startup, I was involved in a
+                challenging project that entailed transforming an existing
+                monolithic application into a microservices architecture.
                 <br />
-                P.S. "freeCodeCamp" was my first introduction to programming.
+                . To ensure a smooth transition, this endeavor required
+                selecting appropriate technologies and tools such as NestJS,
+                InfluxDB, RabbitMQ, Docker, Keycloak, ReactJS ...
+                <br />
+                . This experience has instilled in me a deep understanding of
+                the Complexities and considerations involved in modernizing and
+                optimizing software systems.
+                <br />. I am eager to delve deeper into the realms of
+                technology, explore emerging trends, and embrace new challenges.
               </p>
               <div className="flex mt-10 items-center justify-center gap-7">
                 {info.map((content) => (
