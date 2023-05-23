@@ -21,9 +21,9 @@ function About() {
               <p className="font-sans text-lg font-normal text-justify leading-loose ">
                 <ul class="list-disc marker:text-cyan-600">
                   <li>
-                    I've decided to change careers and pursue a more promising
-                    and reliable field, as I am trying to be a FullStack JS
-                    developer.
+                    I have embarked on a career change journey, driven by the
+                    desire to pursue a more promising and reliable field as a
+                    FullStack JS developer.
                   </li>
                   <li>
                     Aside from finishing my training at GoMyCode Bootcamp, I've
