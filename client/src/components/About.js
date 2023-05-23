@@ -18,41 +18,40 @@ function About() {
         <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-7xl mx-auto">
           <div className="p-2 md:mx-10">
             <div className="text-gray-300 my-3 ">
-              <div className="flex justify-normal">
-                <p className="font-sans text-lg font-semibold text-justify leading-loose w-1/6 text-cyan-600 ">
-                  The beginning
-                </p>
-                <p className="font-sans text-lg font-normal text-justify leading-loose w-3/4">
-                  I've decided to change careers and pursue a more promising and
-                  reliable field, as I am trying to be a FullStack JS developer.
-                  <br />
-                  Aside from finishing my training at GoMyCode Bootcamp, I've
-                  been studying on my own for months and learning new things
-                  every day.
-                </p>
-              </div>
+              <p className="font-sans text-lg font-normal text-justify leading-loose ">
+                <ul class="list-disc marker:text-cyan-600">
+                  <li>
+                    I've decided to change careers and pursue a more promising
+                    and reliable field, as I am trying to be a FullStack JS
+                    developer.
+                  </li>
+                  <li>
+                    Aside from finishing my training at GoMyCode Bootcamp, I've
+                    been studying on my own for months and learning new things
+                    every day.
+                  </li>
+                  <li>
+                    During my internship at IoWaves startup, I was involved in a
+                    challenging project that entailed transforming an existing
+                    monolithic application into a microservices architecture.
+                  </li>
+                  <li>
+                    To ensure a smooth transition, this endeavor required
+                    selecting appropriate technologies and tools such as NestJS,
+                    InfluxDB, RabbitMQ, Docker, Keycloak, ReactJS ...
+                  </li>
+                  <li>
+                    This experience has instilled in me a deep understanding of
+                    the Complexities and considerations involved in modernizing
+                    and optimizing software systems.
+                  </li>
+                  <li>
+                    I am eager to delve deeper into the realms of technology,
+                    explore emerging trends, and embrace new challenges.
+                  </li>
+                </ul>
+              </p>
 
-              <div className="flex justify-normal">
-                <p className="font-sans text-lg font-semibold text-justify leading-loose w-1/6 text-cyan-600">
-                  My 1st experience
-                </p>
-                <p className="font-sans text-lg font-normal text-justify leading-loose w-3/4">
-                  During my internship at IoWaves startup, I was involved in a
-                  challenging project that entailed transforming an existing
-                  monolithic application into a microservices architecture.
-                  <br />
-                  To ensure a smooth transition, this endeavor required
-                  selecting appropriate technologies and tools such as NestJS,
-                  InfluxDB, RabbitMQ, Docker, Keycloak, ReactJS ...
-                  <br />
-                  This experience has instilled in me a deep understanding of
-                  the Complexities and considerations involved in modernizing
-                  and optimizing software systems.
-                  <br />I am eager to delve deeper into the realms of
-                  technology, explore emerging trends, and embrace new
-                  challenges.ning new things every day.
-                </p>
-              </div>
               <div className="flex mt-10 items-center justify-center gap-7">
                 {info.map((content) => (
                   <div key={content.text}>
