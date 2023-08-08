@@ -9,6 +9,7 @@ import todo from "../assets/images/todo.png";
 import memories from "../assets/images/memories.png";
 import ecommerce from "../assets/images/e-commerce.png";
 import Dalle from "../assets/images/Dalle.png"
+import realstate from "../assets/images/realstate.png"
 import project_person from "../assets/images/project_person1.png";
 
 function Project() {
@@ -48,6 +49,12 @@ function Project() {
       name: "DALL-E API",
       github_link: "https://github.com/hamzabelakri/DALL-E-app",
       live_link: "https://dalle-api.netlify.app/",
+    },
+    {
+      img: realstate,
+      name: "Real-Estate",
+      github_link: "https://github.com/hamzabelakri/RealEstate_Locofy",
+      live_link: "https://realestatelocofy.vercel.app/",
     },
   ];
   return (
