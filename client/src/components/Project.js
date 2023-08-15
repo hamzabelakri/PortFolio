@@ -10,7 +10,7 @@ import memories from "../assets/images/memories.png";
 import ecommerce from "../assets/images/e-commerce.png";
 import Dalle from "../assets/images/Dalle.png"
 import realstate from "../assets/images/realstate.png"
-import project_person from "../assets/images/project_person1.png";
+import promptopia from "../assets/images/promptopia.png"
 
 function Project() {
   const projects = [
@@ -20,7 +20,7 @@ function Project() {
       github_link: "https://github.com/hamzabelakri/Weather-app",
       live_link: "https://cloudyday.netlify.app/",
     },
-    {
+    /* {
       img: clock,
       name: "Digital-Clock-app",
       github_link: "https://github.com/hamzabelakri/Digital-Clock",
@@ -31,7 +31,7 @@ function Project() {
       name: "ToDo-app",
       github_link: "https://github.com/hamzabelakri/ToDo-app",
       live_link: "https://mydailytask.netlify.app/",
-    },
+    }, */
     {
       img: memories,
       name: "Memories-app",
@@ -55,6 +55,12 @@ function Project() {
       name: "Real-Estate",
       github_link: "https://github.com/hamzabelakri/RealEstate_Locofy",
       live_link: "https://realestatelocofy.vercel.app/",
+    },
+    {
+      img: promptopia,
+      name: "Promptopia",
+      github_link: "https://github.com/hamzabelakri/Promptopia",
+      live_link: "https://prompt-universe.vercel.app/",
     },
   ];
   return (
