@@ -46,7 +46,7 @@ function Project() {
     },
     {
       img: Dalle,
-      name: "DALL-E API",
+      name: "DALL-E app",
       github_link: "https://github.com/hamzabelakri/DALL-E-app",
       live_link: "https://dalle-api.netlify.app/",
     },
