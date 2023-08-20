@@ -4,9 +4,9 @@ import DevResume from "../assets/DevResume.pdf";
 
 function About() {
   const info = [
-    { text: "Months experience", count: "4" },
-    { text: "Completed Projects", count: "06" },
-    { text: "Companies Work", count: "1" },
+    { text: "Months experience", count: "5" },
+    { text: "Completed Projects", count: "07" },
+    { text: "Companies Work", count: "2" },
   ];
   return (
     <section id="about" className="-mt-8 sm:mt-0 text-white">
@@ -44,6 +44,12 @@ function About() {
                     This experience has instilled in me a deep understanding of
                     the Complexities and considerations involved in modernizing
                     and optimizing software systems.
+                  </li>
+                  <li>
+                    Additionally, I had the opportunity to enhance an Event
+                    Management SaaS platform using the MERN stack at Auto Sans Risk startup. My role
+                    included optimizing design and enriching features to deliver
+                    a seamless user experience.
                   </li>
                   <li>
                     I am eager to delve deeper into the realms of technology,
