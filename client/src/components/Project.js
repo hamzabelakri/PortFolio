@@ -11,6 +11,7 @@ import ecommerce from "../assets/images/e-commerce.png";
 import Dalle from "../assets/images/Dalle.png"
 import realstate from "../assets/images/realstate.png"
 import promptopia from "../assets/images/promptopia.png"
+import youtube from "../assets/images/youtube.png"
 
 function Project() {
   const projects = [
@@ -32,24 +33,7 @@ function Project() {
       github_link: "https://github.com/hamzabelakri/ToDo-app",
       live_link: "https://mydailytask.netlify.app/",
     }, */
-    {
-      img: memories,
-      name: "Memories-app",
-      github_link: "https://github.com/hamzabelakri/Memories",
-      live_link: "https://lovelymemories.netlify.app/",
-    },
-    {
-      img: ecommerce,
-      name: "E-commerce",
-      github_link: "https://github.com/hamzabelakri/E-commerce",
-      live_link: "https://shopify-tn.netlify.app/",
-    },
-    {
-      img: Dalle,
-      name: "DALL-E app",
-      github_link: "https://github.com/hamzabelakri/DALL-E-app",
-      live_link: "https://dalle-api.netlify.app/",
-    },
+
     {
       img: realstate,
       name: "Real-Estate",
@@ -57,11 +41,38 @@ function Project() {
       live_link: "https://realestatelocofy.vercel.app/",
     },
     {
+      img: memories,
+      name: "Memories-app",
+      github_link: "https://github.com/hamzabelakri/Memories",
+      live_link: "https://lovelymemories.netlify.app/",
+    },
+   
+    {
+      img: ecommerce,
+      name: "E-commerce",
+      github_link: "https://github.com/hamzabelakri/E-commerce",
+      live_link: "https://shopify-tn.netlify.app/",
+    },
+    {
+      img: youtube,
+      name: "Youtube-clone",
+      github_link: "https://github.com/hamzabelakri/Youtube",
+      live_link: "https://youtube-streaming.netlify.app/",
+    },
+    {
       img: promptopia,
       name: "Promptopia",
       github_link: "https://github.com/hamzabelakri/Promptopia",
       live_link: "https://prompt-universe.vercel.app/",
     },
+    {
+      img: Dalle,
+      name: "DALL-E app",
+      github_link: "https://github.com/hamzabelakri/DALL-E-app",
+      live_link: "https://dalle-api.netlify.app/",
+    },
+    
+    
   ];
   return (
     <section id="projects" className="py-10 text-white">
