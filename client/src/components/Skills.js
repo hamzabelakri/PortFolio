@@ -6,8 +6,8 @@ function Skills() {
     {
       name: "Github",
       logo: "bi:github",
-      level: "Beginner",
-      count: 20,
+      level: "Intermediate",
+      count: 40,
     },
 
     {
@@ -22,8 +22,8 @@ function Skills() {
     {
       name: "HTML5",
       logo: "ion:logo-html5",
-      level: "Intermediate",
-      count: 40,
+      level: "Advanced",
+      count: 70,
     },
     {
       name: "CSS3",
@@ -34,24 +34,36 @@ function Skills() {
     {
       name: "React",
       logo: "ion:logo-react",
-      level: "Intermediate",
-      count: 40,
+      level: "Advanced",
+      count: 70,
     },
     {
       name: "Redux",
       logo: "tabler:brand-redux",
-      level: "Intermediate",
-      count: 40,
+      level: "Advanced",
+      count: 70,
     },
     {
       name: "Preact",
       logo: "simple-icons:preact",
+      level: "Advanced",
+      count: 70,
+    },
+    {
+      name: "Next.Js",
+      logo: "file-icons:nextjs",
       level: "Intermediate",
       count: 40,
     },
     {
       name: "Tailwind",
       logo: "mdi:tailwind",
+      level: "Intermediate",
+      count: 40,
+    },
+    {
+      name: "Material UI",
+      logo: "devicon-plain:materialui",
       level: "Intermediate",
       count: 40,
     },
@@ -67,8 +79,8 @@ function Skills() {
     {
       name: "Express",
       logo: "simple-icons:express",
-      level: "Intermediate",
-      count: 40,
+      level: "Advanced",
+      count: 70,
     },
     {
       name: "MongoDB",

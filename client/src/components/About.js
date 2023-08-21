@@ -40,14 +40,14 @@ function About() {
                     selecting appropriate technologies and tools such as NestJS,
                     InfluxDB, RabbitMQ, Docker, Keycloak, ReactJS ...
                   </li>
-                  <li>
+                  {/* <li>
                     This experience has instilled in me a deep understanding of
                     the Complexities and considerations involved in modernizing
                     and optimizing software systems.
-                  </li>
+                  </li> */}
                   <li>
                     Additionally, I had the opportunity to enhance an Event
-                    Management SaaS platform using the MERN stack at Auto Sans Risk startup. My role
+                    Management SaaS platform using the MERN stack at AutoSansRisk startup. My role
                     included optimizing design and enriching features to deliver
                     a seamless user experience.
                   </li>
