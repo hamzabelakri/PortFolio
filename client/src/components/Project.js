@@ -12,15 +12,16 @@ import Dalle from "../assets/images/Dalle.png"
 import realstate from "../assets/images/realstate.png"
 import promptopia from "../assets/images/promptopia.png"
 import youtube from "../assets/images/youtube.png"
+import carrental from '../assets/images/carrental.png'
 
 function Project() {
   const projects = [
-    {
+   /*  {
       img: weather,
       name: "Weather-app ",
       github_link: "https://github.com/hamzabelakri/Weather-app",
       live_link: "https://cloudyday.netlify.app/",
-    },
+    }, */
     /* {
       img: clock,
       name: "Digital-Clock-app",
@@ -34,12 +35,12 @@ function Project() {
       live_link: "https://mydailytask.netlify.app/",
     }, */
 
-    {
+    /* {
       img: realstate,
       name: "Real-Estate",
       github_link: "https://github.com/hamzabelakri/RealEstate_Locofy",
       live_link: "https://realestatelocofy.vercel.app/",
-    },
+    }, */
     {
       img: memories,
       name: "Memories-app",
@@ -54,24 +55,30 @@ function Project() {
       live_link: "https://shopify-tn.netlify.app/",
     },
     {
-      img: youtube,
-      name: "Youtube-clone",
-      github_link: "https://github.com/hamzabelakri/Youtube",
-      live_link: "https://youtube-streaming.netlify.app/",
-    },
-    {
       img: promptopia,
       name: "Promptopia",
       github_link: "https://github.com/hamzabelakri/Promptopia",
       live_link: "https://prompt-universe.vercel.app/",
     },
     {
+      img: youtube,
+      name: "Youtube-clone",
+      github_link: "https://github.com/hamzabelakri/Youtube",
+      live_link: "https://youtube-streaming.netlify.app/",
+    },
+   
+    {
       img: Dalle,
       name: "DALL-E app",
       github_link: "https://github.com/hamzabelakri/DALL-E-app",
       live_link: "https://dalle-api.netlify.app/",
     },
-    
+    {
+      img: carrental,
+      name: "RentACar",
+      github_link: "https://github.com/hamzabelakri/Car-Rent",
+      live_link: "https://vercel.com/hamzabelakri92-gmailcom/car-rent",
+    },
     
   ];
   return (
