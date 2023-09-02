@@ -3,84 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
-import weather from "../assets/images/weather.png";
-import clock from "../assets/images/clock.png";
-import todo from "../assets/images/todo.png";
-import memories from "../assets/images/memories.png";
-import ecommerce from "../assets/images/e-commerce.png";
-import Dalle from "../assets/images/Dalle.png"
-import realstate from "../assets/images/realstate.png"
-import promptopia from "../assets/images/promptopia.png"
-import youtube from "../assets/images/youtube.png"
-import carrental from '../assets/images/carrental.png'
+import { projects } from "../constants/index";
 
 function Project() {
-  const projects = [
-   /*  {
-      img: weather,
-      name: "Weather-app ",
-      github_link: "https://github.com/hamzabelakri/Weather-app",
-      live_link: "https://cloudyday.netlify.app/",
-    }, */
-    /* {
-      img: clock,
-      name: "Digital-Clock-app",
-      github_link: "https://github.com/hamzabelakri/Digital-Clock",
-      live_link: "https://ourdigitalclock.netlify.app/",
-    },
-    {
-      img: todo,
-      name: "ToDo-app",
-      github_link: "https://github.com/hamzabelakri/ToDo-app",
-      live_link: "https://mydailytask.netlify.app/",
-    }, */
-
-    /* {
-      img: realstate,
-      name: "Real-Estate",
-      github_link: "https://github.com/hamzabelakri/RealEstate_Locofy",
-      live_link: "https://realestatelocofy.vercel.app/",
-    }, */
-    {
-      img: memories,
-      name: "Memories-app",
-      github_link: "https://github.com/hamzabelakri/Memories",
-      live_link: "https://lovelymemories.netlify.app/",
-    },
-   
-    {
-      img: ecommerce,
-      name: "E-commerce",
-      github_link: "https://github.com/hamzabelakri/E-commerce",
-      live_link: "https://shopify-tn.netlify.app/",
-    },
-    {
-      img: promptopia,
-      name: "Promptopia",
-      github_link: "https://github.com/hamzabelakri/Promptopia",
-      live_link: "https://prompt-universe.vercel.app/",
-    },
-    {
-      img: youtube,
-      name: "Youtube-clone",
-      github_link: "https://github.com/hamzabelakri/Youtube",
-      live_link: "https://youtube-streaming.netlify.app/",
-    },
-   
-    {
-      img: Dalle,
-      name: "DALL-E app",
-      github_link: "https://github.com/hamzabelakri/DALL-E-app",
-      live_link: "https://dalle-api.netlify.app/",
-    },
-    {
-      img: carrental,
-      name: "RentACar",
-      github_link: "https://github.com/hamzabelakri/Car-Rent",
-      live_link: "https://vercel.com/hamzabelakri92-gmailcom/car-rent",
-    },
-    
-  ];
   return (
     <section id="projects" className="py-10 text-white">
       <div className="text-center">
@@ -117,7 +42,9 @@ function Project() {
                     alt=""
                     className="object-fill	 h-48  rounded-lg"
                   />
-                  <h3 className="text-xl text-center my-4">{project_info.name}</h3>
+                  <h3 className="text-xl text-center my-4">
+                    {project_info.name}
+                  </h3>
                   <div className="flex justify-center gap-3">
                     <a
                       href={project_info.github_link}
@@ -139,7 +66,6 @@ function Project() {
             ))}
           </Swiper>
         </div>
-       
       </div>
     </section>
   );
