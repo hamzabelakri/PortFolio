@@ -1,6 +1,6 @@
 import React from "react";
 import aboutImg from "../assets/images/about.png";
-import DevResume from "../assets/DevResume.pdf";
+import Resume from "../assets/hamza_Resume.pdf";
 
 function About() {
   const info = [
@@ -75,7 +75,7 @@ function About() {
               <br />
               <div class="flex justify-center">
                 <button className="btn-primary">
-                  <a href={DevResume} download>
+                  <a href={Resume} download>
                     Download CV
                   </a>
                 </button>
